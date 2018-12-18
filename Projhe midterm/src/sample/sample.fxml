@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="sign_username" layoutX="61.0" layoutY="161.0" promptText="Enter Username" />
+      <PasswordField fx:id="sign_password" layoutX="61.0" layoutY="217.0" promptText="Enter Password" />
+      <Button layoutX="111.0" layoutY="308.0" mnemonicParsing="false" onAction="#login" text="Log in" />
+      <TextField fx:id="register_username" layoutX="353.0" layoutY="161.0" promptText="Username" />
+      <PasswordField fx:id="register_password" layoutX="353.0" layoutY="217.0" promptText="Password" />
+      <Button layoutX="398.0" layoutY="308.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <Label layoutX="105.0" layoutY="71.0" text="Sign in!" />
+      <Label layoutX="400.0" layoutY="71.0" text="Sign up!" />
+      <Arc fill="#7e1fff" layoutX="245.0" layoutY="55.0" length="270.0" radiusX="14.0" radiusY="13.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Circle fill="#ff9d1f" layoutX="317.0" layoutY="55.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+      <RadioButton fx:id="hard" layoutX="245.0" layoutY="333.0" mnemonicParsing="false" text="Hard">
+         <toggleGroup>
+            <ToggleGroup fx:id="level" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="easy" layoutX="246.0" layoutY="312.0" mnemonicParsing="false" text="Easy" toggleGroup="$level" />
+      <Label layoutX="206.0" layoutY="362.0" text="By Hamid Tabakhha &amp; Paria Zeynali" />
+      <Circle fill="#d0e0ee" layoutX="243.0" layoutY="47.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
